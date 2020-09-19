@@ -16,7 +16,7 @@ fetch('http://brazildatacube.dpi.inpe.br/odc/ows/wmts?request=GetCapabilities&se
   .then(function (text) {
     var result = parser.read(text);
     var options = optionsFromCapabilities(result, {
-      layer: 'CB4_64_16D_STK_v1',
+      layer: 'CB4_64_16D_STK_1',
       matrixSet: 'WholeWorld_WebMercator',
     });
 
